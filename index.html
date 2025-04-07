@@ -16,14 +16,45 @@
         <a class="Entrega" href="">Entrega</a>
         <div class="consultar">Consultar</div>
         <div class="Estado_Ingreso">
-            <p>Consulta tu estado del <br> ingreso <br> solidario</p>
+            <p id="titulo_ingreso">Consulta tu estado del <br> ingreso <br> solidario</p>
+            <p id="descripcion_ingreso">Porfavor ingresa tus datos personales para revisar el estado de entrega de tu ingreso</p>
+            <div class="Contenedor_Ingreso">
+                <div class="Tipo_Documento">
+                    <form action="/index.html">
+                        <label for="Tipo_Documento">Tipo de documento</label>
+                        <select name="Tipo_Documento" id="Tipo_Documento">
+                            <option value="Cedula">Cedula</option>
+                            <option value="Tarjeta_de_identidad">Tarjeta de identidad</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                            <option value="Registro_Civil">Registro Civil</option>
+                        </select>
+                        <label for="Numero_Documento">Numero de documento</label>
+                        <input type="text" id="Numero_Documento" name="Numero_Documento">
+
+                        <label for="Primer_Nombre">Primer Nombre</label>
+                        <input type="text" id="Primer_Nombre" name="Primer_Nombre">
+
+                        <label for="Primer_Apellido">Primer Apellido</label>
+                        <input type="text" id="Primer_Apellido" name="Primer_Apellido">
+
+                        <label for="Fecha_Expedicion">Fecha de expedición</label>
+                        <input type="date" id="Fecha_Expedicion" name="Fecha_Expedicion">
+
+                        <label for="Numero_Telefono">Número de teléfono</label>
+                        <input type="tel" id="Numero_Telefono" name="Numero_Telefono">
+                        
+                        <input type="consultar" value="consultar">
+                    </form>
+                </div>
+
+            </div>
         </div>
-        <div class="IngresoSolidario">
-            <p>Debido a la situacion generada por el CODIV-19,
-                el gobierno nacional aportara a las familias mas afectadas
-                y que no pertenezcan a ningun programa social,
+        <h1 id="Ingreso_Solidario">Ingreso Solidario</h1>
+            <p id="desc_solidario">Debido a la situacion generada por el CODIV-19, <br>
+                el gobierno nacional aportara a las familias mas afectadas <br>
+                y que no pertenezcan a ningun programa social,<br>
                 us subsidio por $160.000</p>
-        </div>
+        <div class="conocer_mas"><a href="">Conocer Mas</a></div>
     </div>
 </body>
 
